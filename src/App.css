@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(135deg, #add8e6, #ffffff); /* Light background */
+  font-family: 'Roboto', sans-serif;
+
+  margin: 0;
+  padding: 10px;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff; /* Text color */
+  text-shadow: 
+    1px 1px 0 rgba(0, 0, 0, 0.5), 
+    2px 2px 0 rgba(0, 0, 0, 0.5), 
+    3px 3px 0 rgba(0, 0, 0, 0.5), 
+    4px 4px 0 rgba(0, 0, 0, 0.5); /* Multiple shadows for a 3D effect */
+  font-size: 3rem; /* Size of the heading */
+  background: linear-gradient(135deg, #007BFF, #00CFFF); /* Background gradient */
+  padding: 8px; /* Padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  display: inline-block; /* Make the background fit the text */
+  margin-bottom: 0px; /* Space below the heading */
+}
+
+
+
+.sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  gap: 0px;
+  justify-content: center;
+  margin: 10px auto; /* Center the board horizontally */
+  padding: 10px;
+  border: 5px solid #aaa; /* Outer border for the board */
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e0e0e0, #c0c0c0); /* Metallic gradient */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  width: calc(9 * 50px + 8 * 5px + 20px); /* Width of the grid + gap + additional space */
+}
+
+.sudoku-cell {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  border: 2px solid #999; /* Cell borders */
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Cell gradient */
+  transition: background 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+
+
+.sudoku-cell:focus {
+  outline: none; /* Remove default focus outline */
+  background: linear-gradient(135deg, #d4d4d4, #ffffff); /* Change background on focus */
+  transform: scale(1.05); /* Slightly enlarge on focus */
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px; /* Add margin for spacing between buttons */
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF; /* Button color */
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
